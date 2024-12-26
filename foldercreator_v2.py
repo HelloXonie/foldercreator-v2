@@ -17,4 +17,7 @@ except FileExistsError:
     print('Folder already exists')
 
 finally:
-    file = open('README.md', 'w+') 
+    new_file = "README.md" 
+    with open(new_file, 'w+')
+    file.write('Test')
+    print('File created')
